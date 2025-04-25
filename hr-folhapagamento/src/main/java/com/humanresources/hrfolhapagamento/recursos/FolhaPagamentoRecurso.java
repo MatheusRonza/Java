@@ -17,7 +17,7 @@ public class FolhaPagamentoRecurso {
 	@Autowired
 	private FolhaPagamentoServico service;
 	
-	@GetMapping(value = "/{funcionarioId}/dias/{dias}")
+	@GetMapping(value = "{funcionarioId}/dias/{dias}")
 	public ResponseEntity<FolhaPagamento> getFolhaPagamento(@PathVariable Long funcionarioId, @PathVariable Integer dias ){
 		FolhaPagamento folhapagamento = service.getPagamento(funcionarioId, dias);
 		return ResponseEntity.ok(folhapagamento);
