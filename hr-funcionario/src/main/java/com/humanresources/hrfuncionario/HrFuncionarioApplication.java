@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HrFuncionarioApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HrFuncionarioApplication.class, args);
+	SpringApplication.run(HrFuncionarioApplication.class, args);
+	
+	
 	}
 
 }
