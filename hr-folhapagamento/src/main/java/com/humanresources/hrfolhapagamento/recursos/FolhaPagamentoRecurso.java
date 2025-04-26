@@ -22,5 +22,5 @@ public class FolhaPagamentoRecurso {
 		FolhaPagamento folhapagamento = service.getPagamento(funcionarioId, dias);
 		return ResponseEntity.ok(folhapagamento);
 	}
-	
+
 }

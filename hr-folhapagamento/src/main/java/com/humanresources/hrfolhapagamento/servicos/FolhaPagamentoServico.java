@@ -11,6 +11,8 @@ import com.humanresources.hrfolhapagamento.entidades.FolhaPagamento;
 import com.humanresources.hrfolhapagamento.entidades.Funcionario;
 import com.humanresources.hrfolhapagamento.feignclients.FuncionarioFeignClients;
 
+
+
 @Service
 public class FolhaPagamentoServico {
 	
@@ -25,5 +27,5 @@ public class FolhaPagamentoServico {
 		return new FolhaPagamento(funcionario.getNome(),funcionario.getSalario_dia(),dias);
 	
 	}
-
+	
 }
