@@ -27,6 +27,15 @@ public class FuncionarioRecurso {
 	}
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Funcionario> findById(@PathVariable Long id){
+
+/*		
+		// Teste de time-out
+		try {
+			Thread.sleep(3000L);
+		} catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+*/		
 		Funcionario f = repository.findById(id).get();
 		return ResponseEntity.ok(f);
 	
