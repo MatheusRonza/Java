@@ -25,4 +25,5 @@ public class UserServico {
 		logger.info("Email encontrado " + email);		
 		return user;
 	}
+
 }
